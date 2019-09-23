@@ -25,6 +25,10 @@ import org.apache.rocketmq.common.message.Message;
 import org.apache.rocketmq.common.message.MessageQueue;
 import org.apache.rocketmq.remoting.exception.RemotingException;
 
+
+/**
+ * 门面模式（Facade Pattern）。给客户端提供了一个可以访问系统的接口，隐藏系统内部的复杂性
+ */
 public interface MQProducer extends MQAdmin {
     void start() throws MQClientException;
 
